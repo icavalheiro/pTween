@@ -53,7 +53,6 @@ public static class Tween {
     public static T Lerp<T>(T from, T to, float t, AnimationEase ease = AnimationEase.LINEAR){
 		//apply ease to T
 		t = GetTransaction(0, 1, t, ease);
-		Debug.Log("Time: " + t);
 		
 		//using dynamic to avoid convertions
 		dynamic fromD = from;
